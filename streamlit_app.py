@@ -12,4 +12,4 @@ with st.sidebar:
 
 st.write(os.getcwd())
 str_text = open("/mount/src/helpmeread/sample/sample1.txt").read()
-#st.write(str_text)
+st.write(str_text)
