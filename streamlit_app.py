@@ -1,10 +1,13 @@
 import streamlit as st
-#import pdf2image as pfimg
-import pytesseract as tess
+from openai import OpenAI
 
 st.title("🎈 My new app")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "Let's start building a! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )
 
-print ("hello world")
+with st.sidebar:
+    openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
+
+str_text = open("sample1.txt").read()
+st.write(str_text)
