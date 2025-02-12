@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+import os
 
 st.title("🎈 My new app")
 st.write(
@@ -9,5 +10,6 @@ st.write(
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
 
-str_text = open("https://github.com/maodees/helpmeread/blob/main/sample1.txt").read()
-st.write(str_text)
+st.write(os.getcwd())
+#str_text = open("sample1.txt").read()
+#st.write(str_text)
