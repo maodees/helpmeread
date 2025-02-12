@@ -9,5 +9,5 @@ st.write(
 with st.sidebar:
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
 
-str_text = open("sample\sample1.txt").read()
+str_text = open('sample\sample1.txt').read()
 st.write(str_text)
